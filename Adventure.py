@@ -9,7 +9,7 @@ print("Your heartbeat sets the pace: there is no turning back.")
 number_of_classes = 5 # Hero classes you to play with
 
 player_name = input("Whats your name?")
-print(player_name + ", welcome to an epic adventure full of mysteries and danger")
+print(player_name + ", welcome to an epic adventure full of mysteries and danger") # Welcome messege to new Player
 
 Hero_class1 = 1
 Hero_class2 = 2
@@ -17,17 +17,17 @@ Hero_class3 = 3
 Hero_class4 = 4
 
 print("Please choose your class for this adventure.") # Choose your Class you wanna play with
-print("1. Paladin")
-print("2. Barbarian")
-print("3. Cleric")
-print("4. Mage")
-print("|_|" * number_of_classes)
+print("1. Paladin") # Paladin
+print("2. Barbarian") # Barbarian
+print("3. Cleric") # Cleric
+print("4. Mage") # Mage
+print("|_|" * number_of_classes) # Boxes to choose the class
 
 guessed_Hero_class = input("Please select your Class.")
 guessed_Hero_class = int(guessed_Hero_class)
 
 if guessed_Hero_class ==Hero_class1: # Paladin
-    print("Youve choosen the Paladin.")
+    print("Youve choosen the Paladin.") # Paladin Story
     print("A paladin is a melee fighter who wears heavy armor (plate) and uses divine powers to support allies or punish enemies.")
     print("Your Adventure starts in a small Tavern in a town called Ardea")
     print("Next to your table u see a man coverd in a dark green cloak")
@@ -39,18 +39,29 @@ if guessed_Hero_class ==Hero_class1: # Paladin
     if guessed_green_cloak == green_cloak1:
         print("Greetings stranger")
     if guessed_green_cloak == green_cloak2:
-        print("You stay at your table, listening to the music the bard is playing")    
+        print("You stay at your table, listening to the music the bard is playing") 
+        print("Suddenly you hear footsteps next to you. You turn arround and see the man in that green cloak coming towards you")
+        print("Greetings stranger, you look like a tought man. Could you help me with a problem i have?") 
+        problem1 = 1
+        problem2 = 2
+        guessed_problem = input("Help him?") 
+        guessed_problem = int(guessed_problem)  
+        if guessed_problem == problem1:
+            print("Thanks a lot. Outside the tavern theres a Goblin that stole my Mace. Please bring it back to me")
+            print("Youre leaving the tavern. You walk into the nearby forest.")
+        if guessed_problem == problem2:
+            print("You son of a B****, then im gonna Kill you right here!")    
 
 if guessed_Hero_class == Hero_class2: # Barbarian
-    print("Youve choosen the Barbarian.") 
+    print("Youve choosen the Barbarian.") # Barbarian Story
     print("In contrast to the paladin, who is guided by moral oaths and divine magic, the barbarian follows his animal instincts and the primal force of his rage.")
 
 if guessed_Hero_class == Hero_class3: # Cleric
-    print("Youve choosen the Cleric.")    
+    print("Youve choosen the Cleric.") # Cleric Story
     print("The cleric is a divine magician who acts as an intermediary between the mortal world and the gods.")
 
 if guessed_Hero_class == Hero_class4: # Mage
-    print("Youve choosen the Mage")   
+    print("Youve choosen the Mage") # Mage Story
     print("The mage (often also spell wizard or mage) is the epitome of the intellectual magic user who manipulates reality through years of study and arcane arts.")   
     
 
