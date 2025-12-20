@@ -1,15 +1,27 @@
 import random
 
+# Basic color codes
+RED = '\033[91m'
+GREEN = '\033[92m'
+BLUE = '\033[94m'
+RESET = '\033[0m'  # This resets the color back to default
+#   Colorsystem: 
+#   Green text is Storytelling
+#   Red Text is Playerinput needed
+#   Blue Color isnt set yet      
+
+
 # Welcome messege to the Adventure
-print("The wind carries the echo of a forgotten era through the narrow streets as the sun slowly sinks behind the jagged peaks.")
+print(f"{GREEN}The wind carries the echo of a forgotten era through the narrow streets as the sun slowly sinks behind the jagged peaks.")
 print("You stand on the threshold of a place that doesn't appear on any map.")
 print("In your pocket rests an ancient parchment, its seal broken only this morning—and with it, the silence of the last hundred years.")
 print("Your heartbeat sets the pace: there is no turning back.")
 
 number_of_classes = 5 # Hero classes you to play with
 
-player_name = input("Whats your name?")
-print(player_name + ", welcome to an epic adventure full of mysteries and danger") # Welcome messege to new Player
+player_name = input(f"{RED}""Whats your name?")
+print(f"{GREEN}")
+print(player_name + ", welcome to an epic adventure full of mysteries and danger.") # Welcome messege to new Player
 
 Hero_class1 = 1
 Hero_class2 = 2
@@ -23,11 +35,11 @@ print("3. Cleric") # Cleric
 print("4. Mage") # Mage
 print("|_|" * number_of_classes) # Boxes to choose the class
 
-guessed_Hero_class = input("Please select your Class.")
+guessed_Hero_class = input(f"{RED}""Please select your Class.")
 guessed_Hero_class = int(guessed_Hero_class)
 
 if guessed_Hero_class ==Hero_class1: # Paladin
-    print("Youve choosen the Paladin.") # Paladin Story
+    print(f"{RESET}""Youve choosen the Paladin.") # Paladin Story
     print("A paladin is a melee fighter who wears heavy armor (plate) and uses divine powers to support allies or punish enemies.")
     print("Your Adventure starts in a small Tavern in a town called Ardea")
     print("Next to your table u see a man coverd in a dark green cloak")
@@ -47,8 +59,8 @@ if guessed_Hero_class ==Hero_class1: # Paladin
         guessed_problem = input("Help him?") 
         guessed_problem = int(guessed_problem)  
         if guessed_problem == problem1:
-            print("Thanks a lot. Outside the tavern theres a Goblin that stole my Mace. Please bring it back to me")
-            print("Youre leaving the tavern. You walk into the nearby forest.")
+            print("Thanks a lot. Outside the tavern theres a Goblin that stole my Mace. Please bring it back to me.")
+            print("Youre leaving the tavern, moving into the nearby forest.")
         if guessed_problem == problem2:
             print("You son of a B****, then im gonna Kill you right here!")    
 
