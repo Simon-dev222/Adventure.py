@@ -1,10 +1,10 @@
 import random
 
 # Basic color codes
-RED = '\033[91m'
-GREEN = '\033[92m'
-BLUE = '\033[94m'
-RESET = '\033[0m'  # This resets the color back to default
+RED = '\033[91m'    # Red color added
+GREEN = '\033[92m'  # Green color added
+BLUE = '\033[94m'   # Blue color added
+RESET = '\033[0m'   # This resets the color back to default
 #   Colorsystem: 
 #   Green text is Storytelling
 #   Red Text is Playerinput needed
@@ -62,7 +62,7 @@ if guessed_Hero_class ==Hero_class1: # Paladin
             print("Youre leaving the tavern, moving into the nearby forest.")
         if guessed_problem == problem2:
             print("You son of a B****, then im gonna Kill you right here!")    
-            print(f"{BLUE}""Your Adventure ended here."f"{RESET}")
+            print(f"{BLUE}""Your Adventure ended."f"{RESET}")
 if guessed_Hero_class == Hero_class2: # Barbarian
     print("Youve choosen the Barbarian.") # Barbarian Story
     print("In contrast to the paladin, who is guided by moral oaths and divine magic, the barbarian follows his animal instincts and the primal force of his rage.")
